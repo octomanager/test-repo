@@ -1,6 +1,4 @@
 test-repo
 =========
 
-A change.
-
-Another change.
+Create a new commit.

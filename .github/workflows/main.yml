@@ -10,4 +10,4 @@ jobs:
         steps:
             - name: step1
               id: step1
-              uses: OddBloke/store-pr-metadata-action
+              uses: OddBloke/store-pr-metadata-action@master

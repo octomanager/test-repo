@@ -1,0 +1,13 @@
+on:
+    pull_request:
+        types: [closed]
+
+jobs:
+    store_pr_metadata_job:
+        runs-on: ubuntu-latest
+        name: Store our PR metadata!
+        if: github.event.pull_request.merged == true
+        steps:
+            - name: step1
+              id: step1
+              uses: OddBloke/store-pr-metadata-action

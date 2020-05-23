@@ -12,4 +12,5 @@ jobs:
               id: step1
               uses: OddBloke/store-pr-metadata-action@master
               with:
-                  pull-request-data: "${{ github.event.pull_request }}"
+                  pull-request-data: |
+                      ${{ github.event.pull_request }}

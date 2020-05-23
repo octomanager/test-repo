@@ -11,3 +11,6 @@ jobs:
             - name: step1
               id: step1
               uses: OddBloke/store-pr-metadata-action@master
+              with:
+                  github-token: ${{ secrets.GITHUB_TOKEN }}
+                  pr-number: ${{ github.event.pull_request.number }}
